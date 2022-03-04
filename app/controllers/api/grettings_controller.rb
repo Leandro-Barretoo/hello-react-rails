@@ -2,7 +2,7 @@ class Api::GrettingsController < ApplicationController
     def index
         randgretting = Gretting.order(Arel.sql('RANDOM()')).first
 
-        render json: { :grettings => [
+        render json: { :greetings => [
             {
                 :message => randgretting.message
             }
