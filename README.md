@@ -1,56 +1,65 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# Set up a "Hello world" project with rails-react gem
 
-# Project Name
+![Microverse](https://img.shields.io/badge/Microverse-blueviolet)
 
-> Description the project.
-
+> Simple greeting app using react-rails gem.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
-
+- Ruby on Rails
+- PostgreSQL
+- React
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
+- [Ruby](https://www.ruby-lang.org/en/)
+- [Rails](https://gorails.com/)
+- [React](https://github.com/reactjs/react-rails)
+
 ### Setup
+
+- Make sure you have Ruby on Rails set up properly on your computer
+- Clone or download this repo on your machine
+- Enter project directory
 
 ### Install
 
-### Usage
+```sh
+bundle install
 
-### Run tests
+# Install JS dependencies
+yarn
+```
 
-### Deployment
+### Database
 
+```sh
+# Create the database
+rails db:create
 
+## Apply migration
+rails db:migrate
 
-## Authors
+# Seed database with 5 greetings
+rails db:seed
+```
 
-👤 **Author1**
+### Run
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+```sh
+rails s
+```
 
-👤 **Author2**
+## Author
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+👤 **Leandro Barreto**
+
+- GitHub: [@Leandro-Barretoo](https://github.com/Leandro-Barretoo)
+- LinkedIn: [Leandro Barreto](https://www.linkedin.com/in/leandroobarreto/)
 
 ## 🤝 Contributing
 
@@ -64,10 +73,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Microverse
 
-## 📝 License
+## License
 
-This project is [MIT](./MIT.md) licensed.
+[MIT](./LICENSE)
